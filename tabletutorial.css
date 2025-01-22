@@ -1,4 +1,4 @@
-html {
+ophtml {
     font-family: sans-serif;
   }
   
@@ -32,4 +32,16 @@ html {
   
   caption {
     padding: 10px;
+  }
+
+  thead {
+    font-size: 125%;
+    font-style: italic;
+    background-color: rgb(168, 168, 35);
+  }
+
+  tbody {
+    font-size: 95%;
+    font-style: oblique;
+    background-color: rgb(168, 168, 35);
   }

@@ -9,18 +9,44 @@
   <body>
     <h1>Table template</h1>
     <table>
+      <caption>
+        My first table
+      </caption>
+      <thead>
         <tr>
-            <td>Hi, I'm your first cell.</td>
-            <td>I'm your second cell.</td>
+            <th>Hi, I'm your first cell.</th>
+            <th>I'm your second cell.</th>
             <td>I'm your third cell.</td>
             <td>I'm your fourth cell.</td>
         </tr>
+      </thead>
+      <tbody>  
         <tr>
-            <td>Second row, first cell.</td>
+            <th>Second row, first cell.</th>
             <td>Cell 2.</td>
             <td>Cell 3.</td>
             <td>Cell 4.</td>
         </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th id="clothes" colspan="3">Clothes</th>
+        </tr>
+        <tr>
+          <th id="trousers" headers="clothes">Trousers</th>
+          <th id="skirts" headers="clothes">Skirts</th>
+          <th id="dresses" headers="clothes">Dresses</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th id="belgium" rowspan="3">Belgium</th>
+          <th id="antwerp" headers="belgium">Antwerp</th>
+          <td headers="antwerp belgium clothes trousers">56</td>
+          <td headers="antwerp belgium clothes skirts">22</td>
+          <td headers="antwerp belgium clothes dresses">43</td>
+        </tr>
+      </tbody>  
     </table>
   </body>
 </html>
